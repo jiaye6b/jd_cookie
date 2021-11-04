@@ -9,8 +9,8 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 // const JD_UA = `Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaN8-00/012.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.0 Mobile Safari/533.4 3gpp-gba`;
 // const JD_UA = `Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 SP-engine/2.14.0 main%2F1.0 baiduboxapp/11.18.0.16 (Baidu; P2 13.3.1) NABar/0.0`;
-const JD_UA = `jdapp;iPhone;10.1.2;14.7.1;${randPhoneId(40)};network/wifi;model/iPhone10,2;addressid/4091160336;appBuild/167802;jdSupportDarkMode/0;Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1`
-// const JD_UA = `jdapp;android;10.0.5;8.0.0;${randPhoneId()};network/wifi;Mozilla/5.0 (Linux; Android 11.0.0; HTC U-3w Build/OPR6.170623.013; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.124 MQQBrowser/7.2 TBS/044942 Mobile Safari/537.36`;
+// const JD_UA = `jdapp;iPhone;10.1.2;14.7.1;${randPhoneId(40)};network/wifi;model/iPhone10,2;addressid/4091160336;appBuild/167802;jdSupportDarkMode/0;Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1`
+const JD_UA = `jdapp;android;10.0.5;8.0.0;${randPhoneId()};network/wifi;Mozilla/5.0 (Linux; Android 11.0.0; HTC U-3w Build/OPR6.170623.013; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.124 MQQBrowser/7.2 TBS/044942 Mobile Safari/537.36`;
 const app = express();
 app.use(cors());
 app.use(bodyParser.json({limit: '50mb'}));
